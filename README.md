@@ -3,10 +3,16 @@
 ## Keep in mind
 
 ![conversion](/img/conversion.png)
+![conversion](/img/talk.png)
 
 1. JS isn't only an interpreted language. Depends on implementation - combination of both.
 2. V8 implements JIT compiler.
-3. Better to ** stay away ** from these:
+3. Performance optimised using hidden classes and inline caching.
+4. 1. Memory heap: where memory allocation happens. \*Memory leak
+   2. Call stack: where the engine keeps track of code in its execution. \*Stack overflow
+5. Memory leak : global variables, event listeners, setInterval,infinite push.
+6. JS is single threaded: one execution at a time.
+7. Better to **stay away** from these:
    1. eval()
    2. arguments
    3. for in - use Object.keys() and iterate over.
