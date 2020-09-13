@@ -15,6 +15,6 @@
 7. Better to **stay away** from these:
    1. eval()
    2. arguments
-   3. for in - use Object.keys() and iterate over.
+   3. for in - instead use Object.keys() and iterate over.
    4. with
    5. delete
