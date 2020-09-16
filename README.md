@@ -15,7 +15,8 @@
 5. Memory leak : global variables, event listeners, setInterval,infinite push.
 6. JS is single threaded: one execution at a time. Only a single call stack.
 7. When code in run a global execution context is created.This global execution context gives : a **global object**(for browser it's window, for node it's global) & **this** keyword.When a function is run its execution context is created.
-8. Better to **stay away** from these:
+8. In JS, **lexical scope** (available data + variables where the function was defined) determines our available variables. Not where the function is called (**dynamic scope**). The first lexical environment is the global lexical environment(where we write our code).
+9. Better to **stay away** from these:
    1. eval()
    2. arguments
    3. for in - instead use Object.keys() and iterate over.
