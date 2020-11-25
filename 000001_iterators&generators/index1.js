@@ -29,3 +29,15 @@ console.log(gen.next().value);
 console.log(gen.next().value);
 console.log(gen.next().value);
 console.log(gen.next().value);
+
+// function* namesGen() {
+//   yield 'Brad';
+//   yield 'Traversy';
+//   yield 'Andrei';
+// }
+
+// const name = namesGen();
+
+// for (let i of name) {
+//   console.log(i);
+// }
