@@ -17,8 +17,8 @@ const namesArr = ['Jack', 'Jill', 'John'];
 //Init the iterator and pass in the the namesArr
 const names = nameIterator(namesArr);
 
-console.log(names.next());
-console.log(names.next());
-console.log(names.next());
-console.log(names.next());
-console.log(names.next());
+console.log(names.next().value);
+console.log(names.next().value);
+console.log(names.next().value);
+console.log(names.next().value);
+console.log(names.next().value);
