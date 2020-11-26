@@ -33,10 +33,10 @@
 
 // console.log(prevYear);
 
-const burger = '🍔';
-
 Array.prototype.map = function () {
   let arr = [];
+  const burger = '🍔';
+
   for (var i = 0; i < this.length; i++) {
     arr.push(this[i] + burger);
   }
