@@ -82,16 +82,16 @@
 // console.log(('Outer i', i));
 
 // DOUBT
-const obj1 = {
-  name: 'Steve',
-  speak() {
-    function hello() {
-      return `My name is ${this.name}`;
-    }
+// const obj1 = {
+//   name: 'Steve',
+//   speak() {
+//     function hello() {
+//       return `My name is ${this.name}`;
+//     }
 
-    const a = hello();
-    return a;
-  },
-};
+//     const a = hello();
+//     return a;
+//   },
+// };
 
-console.log(obj1.speak());
+// console.log(obj1.speak());
