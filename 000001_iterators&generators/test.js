@@ -32,3 +32,16 @@
 // const prevYear = new Date('1900-10-10').lastYear();
 
 // console.log(prevYear);
+
+Array.prototype.map = function () {
+  let arr = [];
+  const burger = '🍔';
+
+  for (var i = 0; i < this.length; i++) {
+    arr.push(this[i] + burger);
+  }
+
+  return arr;
+};
+
+console.log([1, 2, 3].map());
