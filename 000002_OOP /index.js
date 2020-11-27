@@ -80,3 +80,18 @@
 // }
 
 // console.log(('Outer i', i));
+
+// DOUBT
+// const obj1 = {
+//   name: 'Hitler',
+//   speak() {
+//     build = () => {
+//       return `My name is ${this.name}`;
+//     };
+
+//     a = build(); //any rule
+//     return a;
+//   },
+// };
+
+// console.log(obj1.speak());
