@@ -1,19 +1,18 @@
 //No side effects
 //input --> output
-
 const array = [1, 2, 3];
 
-function mutateArray(arr) {
-  arr.pop();
+function removeLastItem(arr) {
+  const newArr = [...arr];
+  newArr.pop();
+  return newArr;
 }
 
-function mutateArray2(arr) {
-  arr.forEach((item) => {
-    arr.push(1);
-  });
+function multiplyBy2(arr) {
+  return arr.map((item) => item * 2);
 }
 
-mutateArray(array);
-mutateArray2(array);
+const array2 = removeLastItem(array);
+const array3 = multiplyBy2(array);
 
-console.log(array);
+console.log(array, array2, array3);
