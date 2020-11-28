@@ -11,17 +11,22 @@ function addTo80(n) {
 //Ran the calculation thrice
 
 //Improving by caching and memoization
-let cache = {};
+function memoizedAddTo80() {
+  let cache = {};
 
-function memoizedAddTo80(n) {
-  if (n in cache) {
-    return cache[n];
-  } else {
-    console.log('long time');
-    cache[n] = 80 + n;
-    return cache[n];
-  }
+  return function (n) {
+    if (n in cache) {
+      console.log('Cached value');
+      return cache[n];
+    } else {
+      console.log('long time');
+      cache[n] = 80 + n;
+      return cache[n];
+    }
+  };
 }
 
-console.log(memoizedAddTo80(10));
-console.log(memoizedAddTo80(10));
+const memo = memoizedAddTo80();
+
+console.log(memo(8));
+console.log(memo(8));
