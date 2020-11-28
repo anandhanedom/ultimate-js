@@ -33,15 +33,17 @@
 
 // console.log(prevYear);
 
-Array.prototype.map = function () {
-  let arr = [];
-  const burger = '🍔';
+// Array.prototype.map = function () {
+//   let arr = [];
+//   const burger = '🍔';
 
-  for (var i = 0; i < this.length; i++) {
-    arr.push(this[i] + burger);
-  }
+//   for (var i = 0; i < this.length; i++) {
+//     arr.push(this[i] + burger);
+//   }
 
-  return arr;
-};
+//   return arr;
+// };
 
-console.log([1, 2, 3].map());
+// console.log([1, 2, 3].map());
+
+Function.prototype.bind = function () {};
