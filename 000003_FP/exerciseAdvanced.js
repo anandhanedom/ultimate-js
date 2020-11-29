@@ -82,3 +82,5 @@ function getUserState() {}
 function goBack() {}
 
 function goForward() {}
+
+//RAMBDA or LODASH
