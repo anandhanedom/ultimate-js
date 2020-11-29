@@ -1,0 +1,13 @@
+Functional programming: 
+1.  Many operations on fixed data
+2.  Stateless
+3. Pure, no side effects
+4. Used for parallel programming
+5. Declarative
+
+Object oriented programming:
+1. Few operations on common data
+2. Stateful
+3. Side effects
+4. na
+5. Imperative(How?)
