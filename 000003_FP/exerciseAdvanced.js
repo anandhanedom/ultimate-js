@@ -16,16 +16,36 @@ const user = {
 //  1. Accept refunds
 //  2. Track user history
 
-purchaseItem(emptyCart, buyItem, applyTax, addItemToCart);
+//Compose
+const compose = (f, g) => (...args) => f(g(...args));
 
-function purchaseItem(user, item) {
-  return { ...user, purchases: item };
+//Call
+console.log(
+  purchaseItem(
+    emptyCart,
+    buyItem,
+    applyTax,
+    addItemToCart
+  )(user, { name: 'Laptop', price: 200 })
+);
+
+//Functions
+function purchaseItem(...fns) {
+  return fns.reduce(compose);
 }
 
-function addItemToCart() {}
+function addItemToCart(user, item) {
+  const updatedCart = [...user.cart, item];
 
-function applyTax() {}
+  return { ...user, cart: updatedCart };
+}
 
-function buyItem() {}
+function applyTax(user) {
+  return user;
+}
+
+function buyItem(user) {
+  return user;
+}
 
 function emptyCart() {}
